@@ -1,0 +1,11 @@
+version: '3'
+services:
+  logen:
+    build:
+      context: ./Docker
+      dockerfile: Dockerfile
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/code
+    # - ./src:/code/src
